@@ -68,21 +68,14 @@ numbers.forEach((num) => {
 
 const multiplyByThree = (num: number): number => num * 3;
 
-// Комбо-функция
+// Комбо задание
 function analyzeArray(arr: number[]): string {
     if (arr.length === 0) return "Массив пустой";
     
-    let sum = 0;
-    let min = arr[0];
-    let max = arr[0];
+    const sum = sumArray(arr);
+    const avg = sum / arr.length;
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
     
-    for (const num of arr) {
-        sum += num;
-        if (num < min) min = num;
-        if (num > max) max = num;
-    }
-    
-    const average = sum / arr.length;
-    
-    return `Сумма: ${sum}, Среднее: ${average}, Минимум: ${min}, Максимум: ${max}`;
+    return `Сумма: ${sum}, Среднее: ${avg}, Минимум: ${min}, Максимум: ${max}`;
 }
