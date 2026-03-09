@@ -1,9 +1,9 @@
-export default function FirstPost() {
-  return (
-    <div>
-      <h1 className="text-2xl font-bold">Мой первый пост</h1>
-      <p className="mt-4">Это мой первый пост в блоге!</p>
-    </div>
-  );
+export default function Catalog() {
+    return (
+        <div>
+        <h1 className="text-4xl font-bold mb-6">Мой Первый Блог</h1>
+        <p>Здесь блог</p>
+        </div>
+    );
 }
 

@@ -1,8 +1,8 @@
-export default function About() {
-  return (
-    <div>
-      <h1 className="text-2xl font-bold">О нас</h1>
-      <p className="mt-4">Мы учим Next.js с нуля!</p>
-    </div>
-  );
+export default function Catalog() {
+    return (
+        <div>
+        <h1 className="text-3xl font-bold mb-7 items-center">О нас</h1>
+        <p>Здесь будет информация.</p>
+        </div>
+    );
 }

@@ -1,13 +1,18 @@
 export default function Home() {
+  const products = ["Товар 1", "Товар 2", "Товар 3", "Товар 4"];
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div className="border p-4 rounded shadow bg-white">
-        <h3 className="text-lg font-bold">Товар 1</h3>
-        <p className="text-gray-500">Описание товара</p>
-      </div>
-      <div className="border p-4 rounded shadow bg-white">
-        <h3 className="text-lg font-bold">Товар 2</h3>
-        <p className="text-gray-500">Описание товара</p>
+    <div className="text-center text-black">
+      <h1 className="text-2xl font-bould mb-30">Главная</h1>
+      <div className="grid grid-cols-4 gap-6">
+        {products.map((product, i) => (
+          <div
+            key={i}
+            className="border p-4 rounded bg-white shadow hover:shadow-lg transition"
+          >
+            {product}
+          </div>
+        ))}
       </div>
     </div>
   );

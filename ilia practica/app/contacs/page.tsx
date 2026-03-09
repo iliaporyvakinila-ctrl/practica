@@ -1,7 +1,8 @@
-export default function Contacts() {
-  return (
-    <div>
-      <h1 className="text-3xl">Контакты</h1>
-    </div>
-  );
+export default function Catalog() {
+    return (
+        <div>
+        <h1 className="text-4xl font-bold mb-6">Контакты</h1>
+        <p>Здесь будет список контактов.</p>
+        </div>
+    );
 }

@@ -1,5 +1,6 @@
-import MainHeader from '@/components/layout/main-header';
-import SiteFooter from '@/components/layout/site-footer';
+import "./globals.css";
+import MainHeader from "@/components/layout/main-header";
+import SiteFooter from "@/components/layout/site-footer";
 
 export default function RootLayout({
   children,
@@ -8,9 +9,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className="font-sans">
+      <body className="bg-gray-100 min-h-screen flex flex-col">
         <MainHeader />
-        <main className="container mx-auto p-6">
+        <main className="flex-grow max-w-6xl mx-auto w-full p-6">
           {children}
         </main>
         <SiteFooter />
