@@ -8,9 +8,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body>
+      <body className="font-sans">
         <MainHeader />
-        <main className="min-h-screen">
+        <main className="container mx-auto p-6">
           {children}
         </main>
         <SiteFooter />
