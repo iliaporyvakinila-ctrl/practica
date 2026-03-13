@@ -1,16 +1,31 @@
-import { ProductCard } from '@/components/ui/product-card';
+import  DesktopCard  from '@/components/ui/product-card';
 
 export default function CatalogPage() {
-  const products = Array.from({ length: 6 });
-
   return (
-    <div className="container mx-auto py-10 px-4">
-      <h1 className="text-3xl font-bold mb-8">Каталог товаров</h1>
+    <div className="container mx-auto p-8">
+     <h1 className="
+        text-4xl font-bold mb-8
+        
+        md:text-3xl        {/* Планшеты: меньше */}
+        sm:text-2xl        {/* Телефоны: еще меньше */}
+      ">
+        Каталог товаров
+      </h1>
       
-      <div className="grid grid-cols-3 gap-6">
-        {products.map((_, index) => (
-          <ProductCard key={index} />
-        ))}
+      <div className="
+        flex flex-wrap gap-6
+        justify-center
+        
+        md:gap-4           {/* Планшеты: расстояние меньше */}
+        sm:gap-3           {/* Телефоны: еще меньше */}
+      ">
+
+        <DesktopCard imageSrc="/images/products/1.jpg" />
+        <DesktopCard imageSrc="/images/products/2.jpg" />
+        <DesktopCard imageSrc="/images/products/3.jpg" />
+        <DesktopCard imageSrc="/images/products/4.jpg" />
+        <DesktopCard imageSrc="/images/products/5.jpg" />
+        <DesktopCard imageSrc="/images/products/6.jpg" />
       </div>
     </div>
   );
